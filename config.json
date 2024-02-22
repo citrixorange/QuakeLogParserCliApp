@@ -1,0 +1,8 @@
+{
+    "kills_rules": {
+        "being_killed_decreases_score": false,
+        "kill_yourself_increases_score": false,
+        "show_death_causes": true
+    },
+    "log_file_path": ""
+}

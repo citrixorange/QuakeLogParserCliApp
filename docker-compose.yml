@@ -1,0 +1,9 @@
+version: '3'
+services:
+  myapp:
+    image: quake-log-parser-cli:v1
+    volumes:
+      - ./config.json:/app/target/release/config.json
+      - ./sample_log.log:/app/target/release/sample_log.log
+      - ./STATIC_CONFIG.json:/app/target/release/STATIC_CONFIG.json
+    command: ./quake_log_parser_cli_app -c config.json -l sample_log.log -e true -b false -s false
