@@ -2,6 +2,8 @@
 
 A cli app for parsing local Quake log files
 
+Check Time Management of this Project at: https://wakatime.com/projects/QuakeLogParserCliApp
+
 # Instructions
 
 Build Docker Image:
