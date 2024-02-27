@@ -1,10 +1,9 @@
-FROM alpine:latest
-USER root
+FROM rust:1.76
 LABEL image.name="quake-log-parser-cli:v1"
 WORKDIR /app
+RUN adduser user && chown -R user /app
+USER user
 COPY . .
-RUN ./setup.sh
-ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustc --version
 RUN cargo --version
 RUN cargo build --release

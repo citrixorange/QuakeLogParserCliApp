@@ -2,6 +2,7 @@ version: '3'
 services:
   myapp:
     image: quake-log-parser-cli:v1
+    user: user:user
     volumes:
       - ./config.json:/app/target/release/config.json
       - ./sample_log.log:/app/target/release/sample_log.log
